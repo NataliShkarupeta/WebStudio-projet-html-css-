@@ -26,7 +26,6 @@
 
 // }
 
-
 // .header{
 //     @media screen  and  (min-width: $mobile){
 //         width: $mobile;
@@ -48,36 +47,26 @@
 
 // }
 
+.header__container {
+  height: 60px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    height: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 80px;
+  }
+}
 .header__contact {
   @media screen and (max-width: 767px) {
     display: none;
   }
-}
-
-.header__container{
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width:$tablet) {
-      display:flex;
-      display: flex;
-      align-items: center;
-      
-      width: $tablet;
-
-    }
-
-    @media screen and (max-width: 1199px) {
-        height: 60px;
-      }
-
-      @media screen and (min-width: $desktop){
-        height: 80px;
-        width: $desktop;
-        
-    }
-
 }
 //     @media screen and (min-width: $tablet) {
 //         display: flex;
