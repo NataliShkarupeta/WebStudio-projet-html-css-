@@ -1,0 +1,48 @@
+.hide{
+    display: none;
+}
+
+.button__examples{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 50px;
+    padding-left: 0;
+
+    color: $title-text-color;
+
+    &-bt{
+        border-radius: 4px;
+        border: 1px solid transparent;
+        padding: 6px 22px;
+    
+        background-color: #F5F4FA;
+        font-family: inherit;
+        cursor: pointer;
+        color:$title-text-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+    
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+    }
+}
+
+.button__examples-item {
+    &+&{
+        margin-left: 8px; 
+    }
+}
+
+.button__examples-bt{
+    &:hover,&:focus{
+        background-color: $accent-color;
+        color: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    }
+}

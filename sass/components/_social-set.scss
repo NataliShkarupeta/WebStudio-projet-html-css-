@@ -1,0 +1,51 @@
+.social-set{
+    justify-content: center;
+    display: flex;
+    height: 44px;
+    gap: 10px;
+
+   &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+   
+   
+    padding: 0;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   }
+
+    &__icon{
+        fill: #ffffff;
+        width: 20px;
+        height: 20px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+
+}
+
+.social-set__link{
+    &:hover,&:focus{
+        background-color: $accent-color;
+    }
+}
+
+.social-set__icon{
+    &--color{
+        fill: #AFB1B8; 
+    }
+}
+
+.social-set__icon--color{
+    .social-set__link:hover &,
+    .social-set__link:focus &{
+        fill: #ffffff;  
+    }
+}
