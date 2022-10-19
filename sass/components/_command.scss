@@ -1,7 +1,22 @@
-// .command{
-//     padding-top: 0;
-//     background-color: #F5F4FA;
+.command{
+    padding-top: 0;
+    background-color: #F5F4FA;
+}
 
+.command__list{
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    
+        @media screen and (min-width: $desktop) {
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-left: 0;
+        }
+      }
+}
 //     &__list{
 //         margin-top: 0;
 //         margin-bottom: 0; 

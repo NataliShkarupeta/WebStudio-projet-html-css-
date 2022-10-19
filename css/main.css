@@ -293,7 +293,6 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
-    padding-left: 15px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -412,6 +411,80 @@ img {
 
 .description__point + .description__point {
   margin-left: 30px;
+}
+
+.command {
+  padding-top: 0;
+  background-color: #F5F4FA;
+}
+
+@media screen and (min-width: 768px) {
+  .command__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .command__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+.command__person {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin: 30px 15px;
+  text-align: center;
+  height: 622px;
+}
+@media screen and (min-width: 768px) {
+  .command__person {
+    height: 536px;
+    width: 354px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command__person {
+    height: 428px;
+    width: 270px;
+  }
+}
+
+.command__person-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  text-align: center;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.command__person-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.command__person-text {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .social-set {
