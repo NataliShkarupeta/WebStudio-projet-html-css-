@@ -52,6 +52,30 @@ img {
   }
 }
 
+.section-names {
+  padding-top: 60px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  color: #212121;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section-names {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-names {
+    padding-top: 94px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .header__container {
   height: 60px;
 }
@@ -342,6 +366,52 @@ img {
   background-image: url(../images/astronaut.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1199px) {
+  .description {
+    display: none;
+  }
+}
+
+.description {
+  padding-bottom: 94px;
+}
+.description__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+.description__card {
+  position: relative;
+}
+.description__wrap {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8)));
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+}
+.description__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.description__point + .description__point {
+  margin-left: 30px;
 }
 
 .social-set {
