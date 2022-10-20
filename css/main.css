@@ -97,6 +97,7 @@ img {
 }
 
 .header__container {
+  position: relative;
   height: 60px;
   padding: 16px 15px;
 }
@@ -145,6 +146,43 @@ img {
 
 .header__mailtel:hover .header__icon, .header__mailtel:focus .header__icon {
   fill: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-button {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-button {
+    display: none;
+  }
+}
+
+.mobile-button__button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  padding: 8px;
+  border: none;
+}
+
+.mobile-button__button .mobile-button__menu {
+  display: block;
+}
+.mobile-button__button .mobile-button__close {
+  display: none;
+}
+
+.mobile-button__button.is-open .mobile-button__menu {
+  display: none;
+}
+.mobile-button__button.is-open .mobile-button__close {
+  display: block;
 }
 
 .logo {

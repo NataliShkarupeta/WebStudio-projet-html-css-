@@ -29,6 +29,25 @@
         <a class="logo" href="./index.html"
           ><span class="accent">Web</span>Studio
         </a>
+        <div class="mobile-button">
+          <button
+            class="mobile-button__button is-open"
+            type="button"
+            data-menu-button
+          >
+            <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+              <use
+                class="mobile-button__menu"
+                href="./images/symbol-defs.svg#icon-menu_24px"
+              ></use>
+              <use
+                class="mobile-button__close"
+                href="./images/symbol-defs.svg#icon-close_24px"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -159,7 +178,7 @@
       </section>
 
       <!--Наша команда-->
-      <section class="section command ">
+      <section class="section command">
         <div class="container command__container">
           <h2 class="section-names">Наша команда</h2>
           <ul class="command__list">
@@ -579,6 +598,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 
