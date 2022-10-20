@@ -17,9 +17,7 @@
 //         color: #FFFFFF;
 //     }
 
-//     &--padding{
-//         padding: 0;
-//     }
+
 // }
 
 // .accent{
@@ -37,6 +35,19 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+      &--padding{
+        padding: 0;
+
+        @media screen and (min-width: $tablet) {
+          padding: 0;
+        }
+    }
+    &--color{
+      color: #FFFFFF;
+    }
+
+
 
   @media screen and (max-width: 767px) {
    
