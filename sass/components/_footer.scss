@@ -24,8 +24,9 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // justify-content: space-between;
+    justify-content: left ;
     padding: 60px 15px;
+    
   }
 }
 
@@ -36,10 +37,12 @@
     margin-right: 165px;
   }
   @media screen and (min-width: $desktop) {
+    margin-right: 70px;
     width: 231px;
     text-align: left;
     justify-content: space-evenly;
-    margin: 0;
+    margin-bottom: 0;
+   
   }
 }
 
