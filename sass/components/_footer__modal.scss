@@ -1,7 +1,9 @@
 .footer__modal {
-  
-  width: 450px;
-  
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    padding: 0 15px;
+  }
+
   @media screen and (min-width: $desktop) {
     text-align: left;
   }
@@ -35,7 +37,7 @@
   }
 
   input {
-    width: 450px;
+    width: 100%;
     height: 50px;
     margin-bottom: 20px;
 
@@ -52,7 +54,7 @@
     cursor: pointer;
 
     @media screen and (min-width: $desktop) {
-      width: 358px;
+      width: 100%;
       margin-right: 12px;
     }
   }

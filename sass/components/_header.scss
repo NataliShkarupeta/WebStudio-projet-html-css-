@@ -49,18 +49,15 @@
 
 .header__container {
   height: 60px;
+  padding: 16px 15px;
+  @media screen and (min-width: $mobile) {
+  }
 
   @media screen and (min-width: $tablet) {
+    height: 80px;
+    padding: 16px 15px;
     display: flex;
     align-items: center;
-  }
-
-  @media screen and (max-width: 1199px) {
-    height: 60px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    height: 80px;
   }
 }
 .header__contact {
