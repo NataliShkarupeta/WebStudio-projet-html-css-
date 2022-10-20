@@ -16,7 +16,7 @@
 }
 
 .section-names {
-  padding-top: 60px;
+  // padding-top: 60px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -31,13 +31,21 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 94px;
+  
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 //     padding-top: 60px;
 
 //     // &-names{

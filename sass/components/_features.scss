@@ -1,3 +1,10 @@
+.features{
+    @media screen and (min-width: $desktop) {
+  
+       padding-bottom: 0;
+      } 
+}
+
 .features__name {
   margin-bottom: 10px;
 
