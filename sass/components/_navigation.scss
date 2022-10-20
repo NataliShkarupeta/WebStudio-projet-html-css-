@@ -7,16 +7,15 @@
 
   @media screen and (min-width: $tablet) {
     margin-left: 87px;
-    margin-right: 96px;
+    margin-right: auto;
   }
 
   @media screen and (min-width: $desktop) {
     margin-left: 92px;
-    margin-right: 315px;
-  }
+    
 }
 
-
+}
 .navigation__list {
   
     display: flex;
