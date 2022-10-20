@@ -1,8 +1,8 @@
 .footer {
   background-color: #2f303a;
-  // font-size: 14px;
-  // line-height: 1.2;
-  // letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -18,25 +18,22 @@
     justify-content: center;
     flex-wrap: wrap;
     min-width: 206px;
-    
-  
+
     padding-right: 89px;
     padding-left: 76px;
-   
   }
 
   @media screen and (min-width: $desktop) {
-    justify-content:space-between;
-    padding:60px 15px;
+    // justify-content: space-between;
+    padding: 60px 15px;
   }
 }
 
 .footer__holder {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
-   margin-right: 165px;
-  
+    margin-right: 165px;
   }
   @media screen and (min-width: $desktop) {
     width: 231px;
@@ -46,55 +43,36 @@
   }
 }
 
-//     &__container{
-//         // display: flex;
-//         // flex-direction: column;
-//         // align-items: center;
+.footer {
+  &__item {
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.71;
 
-//         padding-top: 60px;
-//         padding-bottom: 60px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         // width: 1200px;
-//     }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
 
-//     // &__holder{
+  &__address-style {
+    font-style: normal;
+  }
+  &__address {
+    text-decoration: none;
+    color: #ffffff;
+  }
 
-//     //     width: 231px;
-//     // }
+  &__contact {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
 
-//     &__item{
-//         display: block;
-//         margin-bottom: 9px;
-//         line-height: 1.71;
-//     }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 
-//     &__address-style{
-//         font-style: normal;
-//     }
-
-//     &__address{
-//         text-decoration: none;
-//         color: #FFFFFF;
-//     }
-
-//     &__contact{
-//         text-decoration: none;
-//         color:  rgba(255, 255, 255, 0.6);
-
-//         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     }
-
-//     &__list{
-//         margin-top: 0;
-//         margin-bottom: 0;
-//         padding-left: 0;
-//     }
-
-// }
-
-// .footer__contact{
-//     &:hover,&:focus{
-//         color: $accent-color;
-//     }
-// }
+.footer__contact {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
