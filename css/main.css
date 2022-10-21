@@ -86,6 +86,7 @@ img {
 }
 
 .header {
+  position: relative;
   background-color: #ffffff;
   color: #212121;
 }
@@ -169,6 +170,7 @@ img {
   bottom: 8px;
   padding: 8px;
   border: none;
+  z-index: 2;
 }
 
 .mobile-button__button .mobile-button__menu {
@@ -219,6 +221,105 @@ img {
 
 .accent {
   color: #2196F3;
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  max-width: 480px;
+  padding: 48px 40px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-nav__list a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-nav__list a:hover, .mobile-nav__list a:focus {
+  color: #2196F3;
+}
+
+.mobile-nav__item {
+  padding-bottom: 33px;
+}
+.mobile-nav__item .mobile-nav__link--current {
+  color: #2196F3;
+}
+
+.mobile-nav__contact {
+  margin-bottom: 64px;
+}
+.mobile-nav__contact a {
+  text-decoration: none;
+}
+
+.mobile-nav__tel a {
+  display: block;
+  margin-bottom: 32px;
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.mobile-nav__mail a {
+  color: #757575;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+
+.mobile-nav__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  gap: 10px;
+}
+
+.mobile-nav__social:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-nav__social-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -830,7 +931,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer__join {
-    margin-bottom: 90px;
+    margin-bottom: 110px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -866,7 +967,7 @@ img {
   .footer__modal {
     text-align: left;
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 }
 .footer__modal-lable {
@@ -908,6 +1009,7 @@ img {
   .footer__modal-activ input {
     width: 100%;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -928,6 +1030,7 @@ img {
   transition: background-color, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 .standard-button:hover, .standard-button:focus {
   background-color: #188ce8;
@@ -937,23 +1040,23 @@ img {
 .standard-button__icon {
   position: absolute;
   fill: #fff;
-  top: 13px;
-  left: 280px;
-}
-@media screen and (min-width: 1200px) {
-  .standard-button__icon {
-    top: 13px;
-    left: 148px;
-  }
+  bottom: 14px;
 }
 .standard-button__text {
   display: inline-block;
-  margin-right: 25px;
+  margin-left: -10px;
+  margin-right: 10px;
 }
 
 .standard-button__position {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -979,8 +1082,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 95%;
+  max-width: 450px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -992,6 +1095,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .but-close {
@@ -1032,6 +1140,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 40px;
+  width: 100%;
 }
 .modal-form__text {
   margin: 0;
@@ -1041,14 +1150,24 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .modal-form__text {
+    line-height: 1.15;
+  }
+}
 .modal-form__date {
-  width: 448px;
+  width: 100%;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__date {
+    width: 100%;
+  }
 }
 .modal-form__item {
   border-radius: 4px;
@@ -1093,10 +1212,15 @@ img {
 .modal-form__consent {
   display: block;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__consent {
+    font-size: 14px;
+  }
 }
 .modal-form__agree {
   -webkit-appearance: none;
