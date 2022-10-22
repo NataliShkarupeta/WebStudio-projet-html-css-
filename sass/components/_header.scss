@@ -82,8 +82,21 @@
   padding: 8px;
   border: none;
   z-index: 2;
+ 
+}
+.mobile-button__menu{
+  .mobile-button__button:hover &,
+  .mobile-button__:focus &{
+    fill: $accent-color;
+  }
 }
 
+.mobile-button__close{
+  .mobile-button__button:hover &,
+  .mobile-button__:focus &{
+    fill: $accent-color;
+  }
+}
 .mobile-button__button {
   .mobile-button__menu {
     display: block;
