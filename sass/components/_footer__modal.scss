@@ -1,13 +1,19 @@
 .footer__modal {
+  width: 100%;
   @media screen and (min-width: $mobile) {
-    width: $mobile;
-    padding: 0 15px;
+    // width: $mobile;
+  
   }
-
+  @media screen and (min-width: $tablet) {
+   width: 450px;
+  
+  
+  }
   @media screen and (min-width: $desktop) {
+    width: 358px;
     text-align: left;
     padding: 0;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 
   &-lable {

@@ -10,12 +10,14 @@
   background-color: #fff;
   left: 0;
   top: 0;
-  max-width: 480px;
+  // max-width: 480px;
 
   padding: 48px 40px;
 
 
   &.is-open {
+    position: fixed;
+    width: 100%;
     display: flex;
   
     @media screen and (min-width: $tablet) {
