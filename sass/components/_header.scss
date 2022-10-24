@@ -35,9 +35,18 @@
     gap: 30px;
   }
 }
+.header__contact :not(:last-child) {
+  margin-bottom: 10px;
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
+}
 
 .header__contact {
   a {
+    display: block;
+
+    font-family: "Roboto";
     color: $primery-text-color;
     font-weight: 500;
     font-size: 12px;
@@ -50,6 +59,12 @@
     &:focus {
       color: $accent-color;
     }
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+      display: inline-block;
+      margin: 0;
+    }
   }
 }
 
@@ -61,7 +76,6 @@
 }
 
 .mobile-button {
- 
   @media screen and (max-width: 767px) {
     display: block;
   }
@@ -69,6 +83,8 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+
+
 }
 
 .mobile-button__button {
@@ -82,36 +98,38 @@
   padding: 8px;
   border: none;
   z-index: 2;
- 
-}
-.mobile-button__menu{
-  .mobile-button__button:hover &,
-  .mobile-button__:focus &{
-    fill: $accent-color;
-  }
-}
 
-.mobile-button__close{
-  .mobile-button__button:hover &,
-  .mobile-button__:focus &{
-    fill: $accent-color;
+
+
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
+// .mobile-button__menu{
+//   .mobile-button__button:hover &,
+//   .mobile-button__:focus &{
+//     fill: ;
+
+// .mobile-button__close{
+//   .mobile-button__button:hover &,
+//   .mobile-button__:focus &{
+//     fill: ;
+//   }
+// }
 .mobile-button__button {
-  .mobile-button__menu {
+  .mobile-button__close {
     display: block;
   }
-  .mobile-button__close {
+  .mobile-button__menu {
     display: none;
   }
 }
 
 .mobile-button__button.is-open {
-  .mobile-button__menu {
+  .mobile-button__close {
     display: none;
   }
-  .mobile-button__close {
+  .mobile-button__menu {
     display: block;
   }
 }
-

@@ -49,7 +49,7 @@
         </div>
 
         <!-- ///////////////////////Мобільне меню/////////////////////////////// -->
-        <div class="mobile-menu ">
+        <div class="mobile-menu" id="mobile-menu" data-menu>
           <div class="mobile-nav">
             <ul class="mobile-nav__list">
               <li class="mobile-nav__item">
@@ -66,33 +66,32 @@
                 <a class="mobile-nav__link" href="">Контакти</a>
               </li>
             </ul>
-        </div>
-            <div class="wrap">
-              <ul class="mobile-nav__contact">
-                <li class="mobile-nav__tel">
-                  <a href="tel:+380961111111"> +38 096 111 11 11</a>
-                </li>
-                <li class="mobile-nav__mail">
-                  <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
-                </li>
-              </ul>
+          </div>
+          <div class="wrap">
+            <ul class="mobile-nav__contact">
+              <li class="mobile-nav__tel">
+                <a href="tel:+380961111111"> +38 096 111 11 11</a>
+              </li>
+              <li class="mobile-nav__mail">
+                <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
+              </li>
+            </ul>
 
-              <ul class="mobile-nav__soc">
-                <li class="mobile-nav__social">
-                  <a href="" class="mobile-nav__social-link">Instagram</a>
-                </li>
-                <li class="mobile-nav__social">
-                  <a href="" class="mobile-nav__social-link">Twitter</a>
-                </li>
-                <li class="mobile-nav__social">
-                  <a href="" class="mobile-nav__social-link">Facebook</a>
-                </li>
-                <li class="mobile-nav__social">
-                  <a href="" class="mobile-nav__social-link">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          
+            <ul class="mobile-nav__soc">
+              <li class="mobile-nav__social">
+                <a href="" class="mobile-nav__social-link">Instagram</a>
+              </li>
+              <li class="mobile-nav__social">
+                <a href="" class="mobile-nav__social-link">Twitter</a>
+              </li>
+              <li class="mobile-nav__social">
+                <a href="" class="mobile-nav__social-link">Facebook</a>
+              </li>
+              <li class="mobile-nav__social">
+                <a href="" class="mobile-nav__social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- ///////////////////////////////////////////////////////////////////// -->
@@ -192,7 +191,8 @@
                   <p class="description__text">Десктопні додатки</p>
                 </div>
                 <img
-                  src="./images/box1.jpg"
+                  srcset="./images/box1dt.jpg 1x, ./images/box1dt@2x.jpg 2x"
+                  src="./images/box1dt.jpg"
                   alt="Людина що працює з гаджетом"
                   width="370"
                 />
@@ -204,7 +204,8 @@
                   <p class="description__text">Мобільні додатки</p>
                 </div>
                 <img
-                  src="./images/box2.jpg"
+                  srcset="./images/box2dt.jpg 1x, ./images/box2dt@2x.jpg 2x"
+                  src="./images/box2dt.jpg"
                   alt="Людина що працює з гаджетом"
                   width="370"
                 />
@@ -216,7 +217,8 @@
                   <p class="description__text">Дизайнерські рішення</p>
                 </div>
                 <img
-                  src="./images/box3.jpg"
+                  srcset="./images/box3dt.jpg 1x, ./images/box3dt@2x.jpg 2x"
+                  src="./images/box3dt.jpg"
                   alt="Людина що працює з гаджетом"
                   width="370"
                 />
@@ -232,11 +234,33 @@
           <h2 class="section-names">Наша команда</h2>
           <ul class="command__list">
             <li class="command__person">
-              <img
-                src="./images/img.jpg"
-                alt="Фото Ігор Демʼяненко"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/firstdes1x.jpg 1x,
+                    ./images/firstdes2x.jpg 2x
+                  "
+                  media="(min-width:$desktop)"
+                />
+                <source
+                  srcset="
+                    ./images/firsttab1x.jpg 1x,
+                    ./images/firsttab2x.jpg 2x
+                  "
+                  media="(min-width:$tablet)"
+                />
+                <source
+                  srcset="./images/imgfirst.jpg 1x, ./images/imgfirst@2x.jpg 2x"
+                  media="(min-width:$mobile)"
+                />
+
+                <img
+                  src="./images/imgfirst.jpg"
+                  alt="Фото Ігор Демʼяненко"
+                  width="100%"
+                />
+              </picture>
+
               <div class="command__person-info">
                 <h3 class="command__person-name">Ігор Дем'яненко</h3>
                 <p class="command__person-text">Product Designer</p>
@@ -278,11 +302,25 @@
             </li>
 
             <li class="command__person">
-              <img
-                src="./images/img1.jpg"
-                alt="Фото Ольга Рєпіна"
+              <picture>
+                <source
+                  srcset="./images/twodes1x.jpg 1x, ./images/twodes2x.jpg 2x"
+                  media="(min-width:$desktop)"
+                />
+                <source
+                  srcset="./images/twotab1x.jpg 1x, ./images/twotab2x.jpg 2x"
+                  media="(min-width:$tablet)"
+                />
+                <source
+                  srcset="./images/imgtwo.jpg 1x, ./images/imgtwo@2x.jpg 2x"
+                  media="(min-width:$mobile)"
+                />
+
+                <img src="./images/imgtwo.jpg" alt="Фото Ольга Рєпіна"
                 width="100%"
-              />
+              </picture>
+
+              
               <div class="command__person-info">
                 <h3 class="command__person-name">Ольга Рєпіна</h3>
                 <p class="command__person-text">Frontend Developer</p>
@@ -324,11 +362,33 @@
             </li>
 
             <li class="command__person">
-              <img
-                src="./images/img2.jpg"
-                alt="Фото Миколо Тарасов"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./images/threedes1x.jpg 1x,
+                   ./images/threedes2x.jpg 2x"
+                  media="(min-width:$desktop)"
+                />
+                <source
+                  srcset="
+                  ./images/threetab1x.jpg 1x,
+                   ./images/threetab2x.jpg 2x"
+                  media="(min-width:$tablet)"
+                />
+                <source
+                  srcset="
+                  ./images/imgfirst.jpg 1x,
+                   ./images/imgthree@2x.jpg 2x"
+                  media="(min-width:$mobile)"
+                />
+
+                <img
+                  src="./images/imgthree.jpg"
+                  alt="Фото Миколо Тарасов"
+                  width="100%"
+                />
+              </picture>
+
               <div class="command__person-info">
                 <h3 class="command__person-name">Микола Тарасов</h3>
                 <p class="command__person-text">Marketing</p>
@@ -370,11 +430,34 @@
             </li>
 
             <li class="command__person">
-              <img
-                src="./images/img3.jpg"
+              <picture>
+                <source
+                  srcset="
+                  ./images/fourdes1x.jpg 1x, 
+                  ./images/fourdes2x.jpg 2x"
+                  media="(min-width:$desktop)"
+                />
+                <source
+                  srcset="
+                  ./images/fourtab1x.jpg 1x, 
+                  ./images/fourtab2x.jpg 2x"
+                  media="(min-width:$tablet)"
+                />
+                <source
+                  srcset="
+                  ./images/imgfour.jpg 1x,
+                  ./images/imgfour@2x.jpg 2x"
+                  media="(min-width:$mobile)"
+                />
+
+                <img 
+                <img
+                src="./images/imgfour.jpg"
                 alt="Фото Михайло Єрмаков"
                 width="100%"
               />
+              </picture>
+            
               <div class="command__person-info">
                 <h3 class="command__person-name">Михайло Єрмаков</h3>
                 <p class="command__person-text">UI Designer</p>

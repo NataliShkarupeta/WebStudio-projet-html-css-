@@ -6,7 +6,7 @@
 
 .features__name {
   margin-bottom: 10px;
-
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -20,8 +20,6 @@
 }
 
 .features__text {
-  padding-left: 15px;
-
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -29,11 +27,17 @@
   font-weight: 400;
   letter-spacing: 0.03em;
   color: $primery-text-color;
+  // margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
-    padding: 0;
+  margin-bottom: 0;
   }
+  
 }
+// .features__item:not(:last-child) .features__text{
+//   margin-bottom: 30px;
+// } 
+
 
 .features__list {
   @media screen and (min-width: $tablet) {
@@ -50,25 +54,28 @@
   }
 }
 .features__item {
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     width: 354px;
+    margin: 0;
   }
   @media screen and (min-width: $desktop) {
     width: 270px;
     display: block;
-    // & + & {
-    //   margin-left: 30px;
-    // }
+  
   }
+
+
 
   &::before {
     display: block;
     content: "";
     background-size: contain;
     height: 120px;
-    margin: 30px 15px;
+    
+    margin-bottom: 30px;
     background: #f5f4fa;
 
     border-radius: 4px;
@@ -83,6 +90,17 @@
     }
   }
 }
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+   margin: 0;
+  }
+}
+
+
+
 
 .features__icon-antenna {
   &::before {
