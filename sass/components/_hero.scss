@@ -60,12 +60,12 @@
 
   @media screen and (min-width: $desktop) {
     height: 600px;
-    background-image: $gradient, url(../images/imgdesktop.jpg);
+    background-image: $gradient, url(../images/Imgdesktop.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and(min-resolution:192dpi),
       screen and(min-resolution:2dppx) {
-      background-image: $gradient, url(../images/imgdesktop@2x.jpg);
+      background-image: $gradient, url(../images/Imgdesktop@2x.jpg);
     }
   }
 }
