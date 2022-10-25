@@ -256,6 +256,7 @@ img {
   left: 0;
   top: 0;
   padding: 48px 40px;
+  overflow: no-scroll;
 }
 .mobile-menu.is-open {
   position: fixed;
@@ -299,6 +300,7 @@ img {
 .mobile-nav__tel a {
   display: block;
   margin-bottom: 32px;
+  font-family: "Roboto";
   color: #2196f3;
   font-weight: 500;
   font-size: 34px;
@@ -341,6 +343,11 @@ img {
   letter-spacing: 0.02em;
   color: #2196f3;
   padding-right: 10px;
+}
+
+.is-fixed {
+  position: fixed;
+  top: 15px;
 }
 
 @media screen and (max-width: 767px) {
