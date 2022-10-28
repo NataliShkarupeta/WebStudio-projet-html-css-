@@ -1,9 +1,13 @@
 .header-portfolio {
-  height: 80px;
+  height: 60px;
   margin-left: 0;
   margin-right: 0;
 
   background-color: #ffffff;
   color: $title-text-color;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
 }
